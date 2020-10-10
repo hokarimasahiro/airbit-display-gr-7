@@ -96,6 +96,7 @@ SerialPin.USB_TX,
 SerialPin.USB_RX,
 BaudRate.BaudRate115200
 )
+serial.setTxBufferSize(128)
 OLED12864_I2C.init(60)
 OLED12864_I2C.zoom(false)
 OLED12864_I2C.showString(
