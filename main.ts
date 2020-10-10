@@ -8,7 +8,7 @@ input.onButtonPressed(Button.AB, function () {
     Yaw = 0
 })
 radio.onReceivedString(function (receivedString) {
-    serial.writeString(receivedString)
+    serial.writeLine(receivedString)
     commandList = receivedString.split(",")
     for (let commandItem of commandList) {
         command = commandItem.split("=")[0]
